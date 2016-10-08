@@ -1,6 +1,11 @@
 # wolf-xmr-miner
 Wolf's OpenCL XMR Miner for AMD GPUs
 
+In order to Make this deps include 
+if you get the can't find CL/cl.h compile error. 
+
+sudo apt-get install opencl-headers
+
 If you get an error about clCreateBuffer - lower your rawintensity. See the example config xmr.conf for details.
 
 Generally, you want to raise rawintensity as high as it will go without error - but remember, 2MiB of GPU RAM is needed for every work-item.
